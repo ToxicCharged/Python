@@ -1,3 +1,5 @@
+import TicTacToe
+import numberGuesser
 import Calculator
 import Palindrome
 import solidGeometry
@@ -7,33 +9,42 @@ import Vowels
 
 state = ""
 while state.lower() != "n":
+
     print()
-    print("1) Calculator")
-    print("2) Palindrome")
-    print("3) Solid Geometry")
-    print("4) Armstrong Number")
-    print("5) Reverse of Number")
-    print("6) Vowels")
+    print("1) Tic Tac Toe")
+    print("2) Number Guesser")
+    print("3) Calculator")
+    print("4) Palindrome")
+    print("5) Solid Geometry")
+    print("6) Armstrong Number")
+    print("7) Reverse of Number")
+    print("8) Vowels")
     print("x) Exit")
     print()
     choice = input("Choose an option: ")
 
     if choice == '1':
-        Calculator.main()
+        TicTacToe.main()
 
     elif choice == '2':
-        Palindrome.main()
+        numberGuesser.main()
 
     elif choice == '3':
-        solidGeometry.main()
+        Calculator.main()
 
     elif choice == '4':
-        armstrongNumber.main()
+        Palindrome.main()
 
     elif choice == '5':
-        reverseOfNumber.main()
+        solidGeometry.main()
 
     elif choice == '6':
+        armstrongNumber.main()
+
+    elif choice == '7':
+        reverseOfNumber.main()
+
+    elif choice == '8':
         Vowels.main()
 
     elif choice.lower() == 'x':
@@ -50,6 +61,5 @@ while state.lower() != "n":
 
     if state.lower() == 'n':
         print("Have a good day!")
-
     elif state.lower() != 'y':
         print("Invalid choice.")

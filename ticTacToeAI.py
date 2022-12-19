@@ -1,5 +1,5 @@
 import math
-import random
+import time
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
 
     def play_again():
 
-        gameState = input("Would you like to play again? (y/n) ")
+        gameState = input("Would you  like to  play again?  (y/n) ")
 
         if gameState.lower() == 'y':
             main()
@@ -119,6 +119,8 @@ def main():
 
     def computer_move(computerLetter='X'):
 
+        time.sleep(1.5)
+
         bestScore = -math.inf
         bestPosition = 0
 
@@ -134,6 +136,7 @@ def main():
 
         print(f"Computer moves to {bestPosition}.")
         print()
+        time.sleep(0.8)
         make_move(computerLetter, bestPosition)
 
     def minimax(board, is_maximising=False):
@@ -180,10 +183,10 @@ def main():
         if free_spaces(board) >= 9:
             print("The boxes are numbered 1-9, row-wise from left to right.")
             print()
-            temp = input("Choose your side (X / O): ").upper()
+            time.sleep(3)
+            playerLetter = input("Choose your side (X / O): ").upper()
             print()
 
-            playerLetter = temp
             computerLetter = 'X' if playerLetter == 'O' else 'O'
 
         if playerLetter == 'O':

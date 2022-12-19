@@ -181,6 +181,9 @@ def main():
     while not check_for_win(board):
 
         if free_spaces(board) >= 9:
+            print("Welcome to Tic Tac Toe versus the computer!")
+            print()
+            time.sleep(2)
             print("The boxes are numbered 1-9, row-wise from left to right.")
             print()
             time.sleep(3)

@@ -3,6 +3,7 @@ import numberGuesser
 import Calculator
 import Palindrome
 import solidGeometry
+import fibonacciNumber
 import armstrongNumber
 import reverseOfNumber
 import Vowels
@@ -16,9 +17,10 @@ while state.lower() != "n":
     print("3) Calculator")
     print("4) Palindrome")
     print("5) Solid Geometry")
-    print("6) Armstrong Number")
-    print("7) Reverse of Number")
-    print("8) Vowels")
+    print("6) Fibonacci Number")
+    print("7) Armstrong Number")
+    print("8) Reverse of Number")
+    print("9) Vowels")
     print("x) Exit")
     print()
     choice = input("Choose an option: ")
@@ -39,12 +41,15 @@ while state.lower() != "n":
         solidGeometry.main()
 
     elif choice == '6':
-        armstrongNumber.main()
+        fibonacciNumber.main()
 
     elif choice == '7':
-        reverseOfNumber.main()
+        armstrongNumber.main()
 
     elif choice == '8':
+        reverseOfNumber.main()
+
+    elif choice == '9':
         Vowels.main()
 
     elif choice.lower() == 'x':

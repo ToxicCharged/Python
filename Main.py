@@ -68,3 +68,6 @@ while state.lower() != "n":
         print("Have a good day!")
     elif state.lower() != 'y':
         print("Invalid choice.")
+    else:
+        print("Invalid choice.")
+        continue

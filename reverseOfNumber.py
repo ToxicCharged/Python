@@ -15,3 +15,7 @@ def main():
         rev_num *= -1
 
     print("It's reverse =", rev_num)
+
+
+if __name__ == "__main__":
+    main()

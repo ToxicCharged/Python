@@ -42,3 +42,7 @@ def main():
     print()
     print("ez")
     print(f"Number of tries: {tries}")
+
+
+if __name__ == "__main__":
+    main()

@@ -45,3 +45,7 @@ def main():
 
     print("Answer: " + str(answer))
     print()
+
+
+if __name__ == "__main__":
+    main()

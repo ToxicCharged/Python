@@ -198,3 +198,7 @@ def main():
         else:
             player_move(playerLetter)
             computer_move(computerLetter)
+
+
+if __name__ == "__main__":
+    main()

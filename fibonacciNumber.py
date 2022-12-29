@@ -21,3 +21,7 @@ def main():
         print("The " + str(num) + "rd fibonacci number is " + str(fibonacci(num)))
     else:
         print("The " + str(num) + "th fibonacci number is " + str(fibonacci(num)))
+
+
+if __name__ == "__main__":
+    main()

@@ -233,3 +233,7 @@ def main():
     else:
 
         print(f"{mode} players can't play Tic-Tac-Toe.")
+
+
+if __name__ == "__main__":
+    main()
